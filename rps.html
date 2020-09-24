@@ -1,0 +1,71 @@
+<html>
+	<head>
+
+		<title>Rock Paper Scissors</title>
+		<script>
+			var userChoice = prompt("Do you choose rock, paper or scissors?");
+			var computerChoice = Math.random();
+			if (computerChoice <0.34){
+				computerChoice = "rock";
+			}else if(computerChoice <=0.67){
+				computerChoice = "paper";
+			}
+			else{
+				computerChoice = "scissors";
+			}
+			var compare = function(choice1,choice2){
+				if(choice1===choice2){
+					return "The result is a tie!";
+				}
+				if(choice1==="rock"){
+					if(choice2==="scissors"){
+						return "rock wins";
+					}
+					else{
+						return "paper wins";
+					}
+				}
+				if(choice1==="paper"){
+					if(choice2==="rock"){
+						return "paper wins";
+					}
+					else{
+						return "scissors wins";
+					}
+				}
+				if(choice1==="scissors"){
+					if(choice2==="rock"){
+						return "rock wins";
+					}
+					else{
+						return "scissors wins";
+					}
+				}
+			};
+			compare(userChoice,computerChoice);
+			document.write("Computer Choice: " + computerChoice + "<br>");
+			document.write(compare(userChoice, computerChoice));
+			console.log("Computer Choice: " + computerChoice);
+			console.log("User Choice: " + userChoice);
+			var rock = document.getElementById("Rock");
+			var paper = document.getElementById("Paper");
+			var scissors = document.getElementById("Scissors");
+		</script>
+		<style>
+			img {
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<img id="Rock" name="Rock" src="https://lh3.googleusercontent.com/proxy/9qYPEDqyLFZtqOTkSsvx4d613S0JngPNbw7rNphTJufibmvXsa-jf4KJT1ioDOElW1bElFxbmmYjrXPZ-R5_t3iwsRjVQ2xlTiXc">
+	<img id="Paper" name="Paper" src="https://i.pinimg.com/originals/f0/c7/16/f0c7164ffe590dc0ee8c5de14c528126.jpg">
+	<img id="Scissors" name="Scissors" src="https://lh3.googleusercontent.com/proxy/kKIokE-nI10Q8lzMyGcij2MVFcKYBlmHzXuY0HoPwA3P-c-qNQKj_VlpHzkeFQg7Mme0kYxCfsDkVIGXd0wIJ_wwR464bnk">
+	
+		<p>
+		
+		</p>
+	</body>
+</html

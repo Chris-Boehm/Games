@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Tales of the Unknown</title>
+	</head>
+	<body>
+	<script>
+			var option1 = prompt ("You find a cave there is a split in paths, which one do you choose? Type 1 for Right and 2 for Left?");
+			if (option1 == 1) {
+				var option_1_2 = prompt ("You have died! Press 'OK' to restart") + location.reload();
+			} else {
+				var option_2 = prompt ("You have found the treasure! Type 3 for Take or 4 for Leave");
+			}
+			
+			if (option_2 == 3) {
+				var option_3_1 = prompt ("You open the chest and the chest explodes taking you with it! Press 'OK' to restart") + location.reload();
+			} else if (option_2 == 4) {
+				var option_3 = prompt ("After not wanting to take the treasure you wake up from your dream! Press 'OK' to restart for another exciting adventure!") + location.reload();
+			}
+			console.log(option1);
+			console.log(option2);
+		</script>
+	</body>
+</html>
